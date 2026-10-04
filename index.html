@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя 3D Модель</title>
+    
+    <!-- Подключаем библиотеку для отображения 3D-моделей от Google -->
+    <script type="module" src="https://googleapis.com"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Настройки контейнера с моделью */
+        model-viewer {
+            width: 80%;
+            height: 80vh;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- В теге src указываем относительный путь к вашему файлу модели, лежащему в репозитории -->
+    <model-viewer 
+        src="TV.glb" 
+        alt="Моя 3D модель на GitHub Pages" 
+        auto-rotate 
+        camera-controls 
+        ar>
+    </model-viewer>
+
+</body>
+</html>
